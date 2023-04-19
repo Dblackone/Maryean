@@ -4,60 +4,275 @@
 <head>
   <meta charset="UTF-8">
   <title>Maryean's Portfolio</title>
-  <link rel="stylesheet" href="/style/stlye.css">
-  <script src="/js/script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <h1>Maryean's Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a class="navbar-brand" href="#">Maryean's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects and Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Name and Picture Section -->
+    <section class="jumbotron text-center">
+        <div class="container">
+            <img src="https://drive.google.com/uc?export=view&id=1sYXOU4GS5XGuE0S5rzt9Bxwy2kixvHR6" class="rounded-circle" alt="Maryean's Picture" width="200" height="200">
+            <h1 class="display-4">Maryean Doe</h1>
+            <p class="lead">Geography Undergrad | Content Writer | SEO Enthusiast</p>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <section id="about" class="p-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an undergraduate student studying geography. I am also into content writing, SEO, and I work as a freelancer on Upwork and Fiverr. I am also currently learning AWS.</p>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Skills</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="text-center mb-3">Technical Skills</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML5 &amp; CSS3</li>
+                <li class="list-group-item">JavaScript &amp; jQuery</li>
+                <li class="list-group-item">Bootstrap</li>
+                <li class="list-group-item">PHP &amp; MySQL</li>
+                <li class="list-group-item">WordPress</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">AWS Services</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center mb-3">Soft Skills</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Content Writing</li>
+                <li class="list-group-item">SEO</li>
+                <li class="list-group-item">Digital Marketing</li>
+                <li class="list-group-item">Time Management</li>
+                <li class="list-group-item">Problem Solving</li>
+                <li class="list-group-item">Teamwork</li>
+                <li class="list-group-item">Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     
-    <section>
-      <h2>About Maryean</h2>
-      <p>Maryean is an undergraduate student studying Geography. She is also a freelancer on Upwork and Fiverr, specializing in content writing and SEO. Maryean is currently enrolled in the AWS program and is constantly expanding her skills in cloud computing.</p>
+      
+        <!-- Project Section -->
+    <section id="projects">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+            <h2>Projects &amp; Work</h2>
+            <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+            <a href="#project-modal-1" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+                </div>
+                <img src="img/project1.jpg" class="img-responsive" alt="">
+            </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+            <a href="#project-modal-2" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+                </div>
+                <img src="img/project2.jpg" class="img-responsive" alt="">
+            </a>
+            </div>
+            <div class="col-sm-4 portfolio-item">
+            <a href="#project-modal-3" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+                </div>
+                <img src="img/project3.jpg" class="img-responsive" alt="">
+            </a>
+            </div>
+        </div>
+        </div>
     </section>
     
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <h3>Project 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales eleifend tellus, vitae pharetra mauris suscipit eget.</p>
-        </li>
-        <li>
-          <h3>Project 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales eleifend tellus, vitae pharetra mauris suscipit eget.</p>
-        </li>
-        <li>
-          <h3>Project 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales eleifend tellus, vitae pharetra mauris suscipit eget.</p>
-        </li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Contact Maryean</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <input type="submit" value="Send Message">
-      </form>
-    </section>
+    <!-- Project Modals -->
+    <!-- Use the modals below to showcase details about your projects -->
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="project-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                    <h2>Project Title</h2>
+                    <hr class="star-primary">
+                    <img src="img/project1.jpg" class="img-responsive img-centered" alt="">
+                    <p>Project description goes here.</p>
+                    <ul class="list-inline item-details">
+                    <li>Client:
+                        <strong><a href="#">Company Name</a></strong>
+                    </li>
+                    <li>Date:
+                        <strong><a href="#">January 2017</a></strong>
+                    </li>
+                    <li>Service:
+                        <strong><a href="#">Web Development</a></strong>
+                    </li>
+                    </ul>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">Project 2 Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Project 2 Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+  
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">Project 3 Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Project 3 Description</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </div> <!-- end of container -->
+  
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Phone Number">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">Let's Get In Touch!</h2>
+          <hr class="my-4">
+          <p class="mb-5">Ready to start your next project with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3"></i>
+          <div>+1 (555) 123-4567</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3"></i>
+          <!-- Make sure to change the email address in the href attribute below -->
+          <a class="d-block" href="mailto:maryean@example.com">maryean@example.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="bg-dark py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="text-muted">&copy; 2023 Maryean's Portfolio</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap core JS -->
+  <!-- Bootstrap core JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
+
 </body>
 </html>
